@@ -13,3 +13,6 @@ find / -path "/mnt" -prune -o -name "postgresql.conf" -print 2>/dev/null
 * **`-name "postgresql.conf"`** — задает точное имя искомого файла.
 * **`-print`** — выводит путь к найденному файлу на экран.
 * **`2>/dev/null`** — перенаправляет поток ошибок (например, сообщения *«Permission denied»* при сканировании системных папок) в «черную дыру», оставляя вывод чистым.
+
+# когда примерно знаешь директорию
+``` sudo find /etc -name postgresql.conf ```
